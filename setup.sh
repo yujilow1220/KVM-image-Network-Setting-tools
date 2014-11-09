@@ -9,7 +9,6 @@ do
   case $OPT in
     "h" ) FLG_H="TRUE" ; VALUE_H="$OPTARG" ;;
     "i" ) FLG_I="TRUE" ; VALUE_I="$OPTARG" ;;
-    "o" ) FLG_O="TRUE" ; VALUE_O="$OPTARG" ;;
   esac
 done
 
@@ -23,10 +22,6 @@ if [ "$FLG_I" = "" ]; then
   exit 1;
 fi
 
-if [ "$FLG_O" = "TRUE" ]; then
-  echo '"-c"オプションが指定されました。 '
-  echo "→値は$VALUE_Oです。"
-fi
 
 
 ################################# setup start! ########################################
